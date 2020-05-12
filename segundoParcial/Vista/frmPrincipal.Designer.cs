@@ -33,6 +33,9 @@
             this.lblBeneficiario = new System.Windows.Forms.Label();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.txtDUI = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAdmin
@@ -66,22 +69,52 @@
             // 
             // btnConsultar
             // 
+            this.btnConsultar.BackColor = System.Drawing.Color.Teal;
             this.btnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultar.ForeColor = System.Drawing.Color.White;
             this.btnConsultar.Location = new System.Drawing.Point(423, 147);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(88, 35);
             this.btnConsultar.TabIndex = 10;
             this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // txtDUI
             // 
-            this.txtDUI.Location = new System.Drawing.Point(104, 151);
+            this.txtDUI.Location = new System.Drawing.Point(177, 151);
+            this.txtDUI.Multiline = true;
             this.txtDUI.Name = "txtDUI";
-            this.txtDUI.Size = new System.Drawing.Size(240, 26);
+            this.txtDUI.Size = new System.Drawing.Size(240, 30);
             this.txtDUI.TabIndex = 9;
             this.txtDUI.TextChanged += new System.EventHandler(this.txtDUI_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(143, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(415, 20);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "CONSULTA QUIEN DE TU FAMILIA ES BENEFICIARIO";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(152, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(374, 20);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "DEL APOYO ECONOMICO PARA ALIMENTACION";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(252, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(168, 20);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "EN LA EMERGENCIA";
             // 
             // frmPrincipal
             // 
@@ -89,6 +122,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(808, 449);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblBeneficiario);
             this.Controls.Add(this.btnConsultar);
@@ -113,6 +149,9 @@
         private System.Windows.Forms.Label lblBeneficiario;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.TextBox txtDUI;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

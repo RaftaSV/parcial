@@ -37,7 +37,6 @@ namespace segundoParcial
                                 Nombre = bene.Nombre
                             };
 
-
                 if (lista.Count() > 0)
                 {
                     lblBeneficiario.Show();
@@ -45,9 +44,8 @@ namespace segundoParcial
                     {
                         lblNombre.Text = i.Nombre.ToString();
                         lblNombre.Show();
-                        
-                    }
 
+                    }
                 }
                 else
                 {
@@ -55,8 +53,6 @@ namespace segundoParcial
                     lblBeneficiario.Hide();
                     lblNombre.Show();
                     txtDUI.Text = "";
-
-
                 }
                 
             }
