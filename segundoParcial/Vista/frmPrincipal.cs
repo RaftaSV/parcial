@@ -52,7 +52,7 @@ namespace segundoParcial
                     lblNombre.Text = "ESTE DUI NO SE ENCUENTRA REGISTRADO EN NUESTRA BASE DE DATOS";
                     lblBeneficiario.Hide();
                     lblNombre.Show();
-                    txtDUI.Text = "";
+                   
                 }
                 
             }
